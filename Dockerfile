@@ -2,7 +2,7 @@
 FROM	haskell
 LABEL	org.opencontainers.image.authors="Toni Tauro <eye@eyenx.ch>"
 RUN	apt update \
-.       && apt full-upgrade -y \
+        && apt full-upgrade -y \
 	&& apt install -y cabal-install \
 	&& cabal update \
 	&& cabal install hakyll \
